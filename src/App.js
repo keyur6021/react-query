@@ -13,6 +13,7 @@ import { ToastContainer } from 'react-toastify';
 import { FaRegGrinTongueWink } from 'react-icons/fa'
 import SampleDeveloper from './components/SampleDeveloper';
 import 'react-toastify/dist/ReactToastify.css';
+import Mutation from './components/Mutation';
 
 
 
@@ -30,6 +31,7 @@ function App() {
           <Route exact path='/dynamic-query' element={<DynamicParaller developerId={[1, 2, 3, 4]} />} />
           <Route exact path='/depended-query' element={<DependedQuery email={"mulanikeyur30@gmail.com"} />} />
           <Route exact path='/paginated-query' element={<PaginatedQuery />} />
+          <Route exact path='/mutation' element={<Mutation />} />
         </Routes>
         <ToastContainer position="top-right" icon={FaRegGrinTongueWink} />
       </Router>

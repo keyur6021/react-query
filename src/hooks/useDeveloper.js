@@ -1,8 +1,13 @@
 import axios from "axios";
-import { useQuery } from "react-query";
+import { useQuery, useMutation } from "react-query";
 
 export const featchSuperHero = () => {
     return axios.get('http://localhost:5000/limbani-softwares')
+}
+
+const AddNewData = (newDeveloper) => {
+    console.log("newDeveloper", newDeveloper);
+    return axios.get('http://localhost:5000/limbani-softwares', newDeveloper);
 }
 
 export const useDeveloperHook = (onSuccess, onError) => {
@@ -29,6 +34,10 @@ export const useDeveloperHook = (onSuccess, onError) => {
             // }
         }
     );
+}
+
+export const useAddDeveloperData = () => {
+    return useMutation(AddNewData);
 }
 
 
