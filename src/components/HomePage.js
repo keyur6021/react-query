@@ -16,6 +16,8 @@ const HomePage = () => {
 
     return (
         <div>
+            <div> my name is keyur </div>
+            <div> my name is nishit </div>
             {/* {_.map(data?.data, (data) => {
                 return data.alterEgo
             })} */}
