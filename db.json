@@ -30,5 +30,73 @@
             "name": "nishit darji",
             "position": "MERN-developer"
         }
+    ],
+    "friends": [
+        {
+            "id": 1,
+            "name": "raj malaviaya"
+        },
+        {
+            "id": 2,
+            "name": "sanket mulani"
+        },
+        {
+            "id": 3,
+            "name": "pratik patel"
+        }
+    ],
+    "users": [
+        {
+            "id": "mulanikeyur30@gmail.com",
+            "userName": "keyur6021"
+        }
+    ],
+    "channels": [
+        {
+            "id": "keyur6021",
+            "password": "keyur@1234"
+        }
+    ],
+    "colors": [
+        {
+            "id": 1,
+            "label": "white"
+        },
+        {
+            "id": 2,
+            "label": "pink"
+        },
+        {
+            "id": 3,
+            "label": "blue"
+        },
+        {
+            "id": 4,
+            "label": "red"
+        },
+        {
+            "id": 5,
+            "label": "green"
+        },
+        {
+            "id": 6,
+            "label": "purple"
+        },
+        {
+            "id": 7,
+            "label": "skyblue"
+        },
+        {
+            "id": 8,
+            "label": "black"
+        },
+        {
+            "id": 9,
+            "label": "yellow"
+        },
+        {
+            "id": 10,
+            "label": "silver"
+        }
     ]
 }
