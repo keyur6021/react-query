@@ -1,8 +1,14 @@
 import React from 'react'
 import { useQuery, useQueryClient } from 'react-query'
-import * as _ from 'lodash'
+import * as _ from 'lodash';
+
+
 
 const HomePage = () => {
+
+
+
+
 
     //! for data get from another component -----
 
@@ -16,6 +22,10 @@ const HomePage = () => {
 
     return (
         <div>
+
+            <div style={{ fontSize: '58px', zIndex: '1' }}>
+                this is test data
+            </div>
             {/* {_.map(data?.data, (data) => {
                 return data.alterEgo
             })} */}

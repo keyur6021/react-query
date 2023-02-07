@@ -13,6 +13,13 @@
   }
 }
 
+.me-auto {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,13 +42,16 @@
   text-decoration: none;
   color: rgb(255, 255, 255);
   padding-left: 15px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .inactive {
   text-decoration: none;
   color: #fff;
   padding-left: 15px;
-
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .parent-carousel {
@@ -101,4 +111,39 @@
   font-size: 25px;
   font-weight: bold;
   padding: 20px;
+}
+
+.keyur-logo {
+  width: 70px;
+  margin-right: 20px;
+}
+
+.navbar-bg {
+  background-color: #000;
+}
+
+.name-header {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 37px;
+}
+
+.position-header {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 11px;
+}
+
+.parent-card .container {
+  padding: 7% 10%;
+  width: 600px;
+  border: 1px solid #002242;
+  border-radius: 10px;
+  background-image: linear-gradient(360deg, #C9D6FF, #E2E2E2);
+}
+
+.title {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 25px;
 }

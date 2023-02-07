@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useQuery, useMutation, useQueryClient } from "react-query";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 export const featchSuperHero = () => {
     return axios.get('http://localhost:5000/limbani-softwares')
@@ -65,6 +66,7 @@ export const useDeleteData = () => {
     const queryClient = useQueryClient();
     return useMutation(DeleteDeveloperData, {
         onSuccess: () => {
+            toast.success('delete user successfully')
             queryClient.refetchQueries('developers');
         }
     });
