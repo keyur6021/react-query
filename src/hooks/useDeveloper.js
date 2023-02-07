@@ -1,5 +1,6 @@
 import axios from "axios";
-import { useQuery, useMutation } from "react-query";
+import { useQuery, useMutation, useQueryClient } from "react-query";
+import { useNavigate } from "react-router-dom";
 
 export const featchSuperHero = () => {
     return axios.get('http://localhost:5000/limbani-softwares')
@@ -7,7 +8,12 @@ export const featchSuperHero = () => {
 
 const AddNewData = (newDeveloper) => {
     console.log("newDeveloper", newDeveloper);
-    return axios.get('http://localhost:5000/limbani-softwares', newDeveloper);
+    return axios.post('http://localhost:5000/limbani-softwares', newDeveloper);
+}
+
+const DeleteDeveloperData = (deleteId) => {
+    console.log("deleteId", deleteId);
+    return axios.delete(`http://localhost:5000/limbani-softwares/${deleteId}`)
 }
 
 export const useDeveloperHook = (onSuccess, onError) => {
@@ -36,8 +42,30 @@ export const useDeveloperHook = (onSuccess, onError) => {
     );
 }
 
+//! create a uaeMutation Hook for the connect with the api :
+
 export const useAddDeveloperData = () => {
-    return useMutation(AddNewData);
+
+    const queryClient = useQueryClient();
+    const navigate = useNavigate();
+
+    return useMutation(AddNewData, {
+        onSuccess: () => {
+            //! for dairect validate the data
+            queryClient.invalidateQueries('developers');
+            navigate('/developers')
+        },
+    });
+
 }
 
 
+
+export const useDeleteData = () => {
+    const queryClient = useQueryClient();
+    return useMutation(DeleteDeveloperData, {
+        onSuccess: () => {
+            queryClient.refetchQueries('developers');
+        }
+    });
+}

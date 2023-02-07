@@ -1,16 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import axios from 'axios';
-import { useQuery } from 'react-query';
+import { useQuery, useQueryClient } from 'react-query';
 import * as _ from 'lodash';
 import mainProfile from './../assets/images/mainProfile.png';
 import Carousel from 'react-elastic-carousel';
 import { toast } from 'react-toastify';
-import { useDeveloperHook } from '../hooks/useDeveloper';
+import { useDeleteData, useDeveloperHook } from '../hooks/useDeveloper';
 import { Link } from 'react-router-dom';
+import { RiDeleteBin6Fill } from 'react-icons/ri'
 
 
 const Developers = () => {
-
     const onSuccess = () => {
         toast.success("succcessfully called");
         console.log('%c this data will successfully show here', 'color:yellow');
@@ -24,6 +24,7 @@ const Developers = () => {
     // ! destructuring the react-query data from useQuery() -- for get() methode and create a custom Hook ->
 
     const { isLoading, data, isError, error, isFetching, refetch } = useDeveloperHook(onSuccess, onError);
+    const { mutate: DeleteData } = useDeleteData();
 
     console.log("--->  homePage2", data);
 
@@ -39,10 +40,9 @@ const Developers = () => {
             <div>
                 <div style={{ color: 'red', fontSize: '25px', fontWeight: 'bold', padding: '15px' }}> Here teh featch limbani softwares developer data</div>
                 <div>
-                    <Carousel itemsToShow={3.5} >
+                    <Carousel itemsToShow={3.5}>
                         {
                             _.map(data?.data, (data, index) => {
-                                console.log("--->  data", data.image)
                                 return <div className='parent-carousel' key={data.id}>
                                     <div className='image-section'>
                                         <img src={mainProfile} alt='user-profile' className='profile-user' />
@@ -53,6 +53,7 @@ const Developers = () => {
                                     <div className='description'>
                                         {data.position}
                                     </div>
+                                    <button onClick={() => DeleteData(data?.id)} className='btn btn-danger rounded-pill'> <RiDeleteBin6Fill /> </button>
                                 </div>
                             })
                         }

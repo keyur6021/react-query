@@ -17,6 +17,7 @@ const NavbarComponent = () => {
                         <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="/super-heroes">Super Heroes</NavLink>
                         <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="/developers">React-query</NavLink>
                         <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="/paginated-query">Paginates Query</NavLink>
+                        <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="/mutation">Add New Developer</NavLink>
                     </Nav>
                 </Container>
             </Navbar>

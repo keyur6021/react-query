@@ -16,7 +16,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import Mutation from './components/Mutation';
 
 
-
 function App() {
   return (
     <div className="App">

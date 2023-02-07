@@ -6,7 +6,7 @@ const Mutation = () => {
     const [name, setName] = useState('')
     const [position, setPosition] = useState('')
 
-
+    //! use the props mutate for the POST,UPDATE and DELETE methods :
     const { mutate: newDeveloper } = useAddDeveloperData();
 
     const handleClickData = () => {
@@ -14,6 +14,7 @@ const Mutation = () => {
         const newDeveloperData = { name, position }
         newDeveloper(newDeveloperData);
     }
+
     return (
         <React.Fragment>
             <div className='container'>

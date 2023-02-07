@@ -1,102 +1,102 @@
 {
-    "limbani-softwares": [
-        {
-            "id": 1,
-            "name": "keyur mulani",
-            "position": "FE-developer"
-        },
-        {
-            "id": 2,
-            "name": "alpesh kanzariya",
-            "position": "MERN-developer"
-        },
-        {
-            "id": 3,
-            "name": "mihir",
-            "position": "MERN-developer"
-        },
-        {
-            "id": 4,
-            "name": "amit bhai",
-            "position": "MERN-developer"
-        },
-        {
-            "id": 5,
-            "name": "punit kasatiya",
-            "position": "MERN-developer"
-        },
-        {
-            "id": 6,
-            "name": "nishit darji",
-            "position": "MERN-developer"
-        }
-    ],
-    "friends": [
-        {
-            "id": 1,
-            "name": "raj malaviaya"
-        },
-        {
-            "id": 2,
-            "name": "sanket mulani"
-        },
-        {
-            "id": 3,
-            "name": "pratik patel"
-        }
-    ],
-    "users": [
-        {
-            "id": "mulanikeyur30@gmail.com",
-            "userName": "keyur6021"
-        }
-    ],
-    "channels": [
-        {
-            "id": "keyur6021",
-            "password": "keyur@1234"
-        }
-    ],
-    "colors": [
-        {
-            "id": 1,
-            "label": "white"
-        },
-        {
-            "id": 2,
-            "label": "pink"
-        },
-        {
-            "id": 3,
-            "label": "blue"
-        },
-        {
-            "id": 4,
-            "label": "red"
-        },
-        {
-            "id": 5,
-            "label": "green"
-        },
-        {
-            "id": 6,
-            "label": "purple"
-        },
-        {
-            "id": 7,
-            "label": "skyblue"
-        },
-        {
-            "id": 8,
-            "label": "black"
-        },
-        {
-            "id": 9,
-            "label": "yellow"
-        },
-        {
-            "id": 10,
-            "label": "silver"
-        }
-    ]
+  "limbani-softwares": [
+    {
+      "id": 1,
+      "name": "keyur mulani",
+      "position": "FE-developer"
+    },
+    {
+      "name": "alpesh ",
+      "position": "kanzaria",
+      "id": 2
+    },
+    {
+      "name": "punit ",
+      "position": "patel",
+      "id": 3
+    },
+    {
+      "name": "amit",
+      "position": "code with this",
+      "id": 4
+    },
+    {
+      "name": "nishit",
+      "position": "darji",
+      "id": 5
+    },
+    {
+      "name": "test",
+      "position": "test",
+      "id": 6
+    }
+  ],
+  "friends": [
+    {
+      "id": 1,
+      "name": "raj malaviaya"
+    },
+    {
+      "id": 2,
+      "name": "sanket mulani"
+    },
+    {
+      "id": 3,
+      "name": "pratik patel"
+    }
+  ],
+  "users": [
+    {
+      "id": "mulanikeyur30@gmail.com",
+      "userName": "keyur6021"
+    }
+  ],
+  "channels": [
+    {
+      "id": "keyur6021",
+      "password": "keyur@1234"
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "label": "white"
+    },
+    {
+      "id": 2,
+      "label": "pink"
+    },
+    {
+      "id": 3,
+      "label": "blue"
+    },
+    {
+      "id": 4,
+      "label": "red"
+    },
+    {
+      "id": 5,
+      "label": "green"
+    },
+    {
+      "id": 6,
+      "label": "purple"
+    },
+    {
+      "id": 7,
+      "label": "skyblue"
+    },
+    {
+      "id": 8,
+      "label": "black"
+    },
+    {
+      "id": 9,
+      "label": "yellow"
+    },
+    {
+      "id": 10,
+      "label": "silver"
+    }
+  ]
 }

@@ -10,7 +10,7 @@ const ParallelQuerys = () => {
     const fetchFriends = () => {
         return axios.get('http://localhost:5000/friends');
     }
-    // ! parallel query multi query run
+    // ! parallel query multi query runa
 
     const { data: developers } = useQuery('developer', fetchDevelopers);
     console.log("--->  developers", developers)
