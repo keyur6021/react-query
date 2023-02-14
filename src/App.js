@@ -14,7 +14,6 @@ import { FaRegGrinTongueWink } from 'react-icons/fa'
 import SampleDeveloper from './components/SampleDeveloper';
 import 'react-toastify/dist/ReactToastify.css';
 import Mutation from './components/Mutation';
-
 import { useCallback } from "react";
 import { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
