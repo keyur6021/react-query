@@ -18,6 +18,7 @@ import { useCallback } from "react";
 import { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import NewHook from './components/NewHook';
 
 function App() {
 
@@ -122,6 +123,7 @@ function App() {
           <Route exact path='/depended-query' element={<DependedQuery email={"mulanikeyur30@gmail.com"} />} />
           <Route exact path='/paginated-query' element={<PaginatedQuery />} />
           <Route exact path='/mutation' element={<Mutation />} />
+          <Route exact path='/newHook' element={<NewHook />} />
         </Routes>
         <ToastContainer position="top-right" icon={FaRegGrinTongueWink} />
       </Router>
