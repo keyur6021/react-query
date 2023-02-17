@@ -23,10 +23,10 @@ const Developers = () => {
 
     // ! destructuring the react-query data from useQuery() -- for get() methode and create a custom Hook ->
 
-    const { isLoading, data, isError, error, isFetching, refetch } = useDeveloperHook(onSuccess, onError);
+    const { isLoading, data:vivek, isError, error, isFetching, refetch } = useDeveloperHook(onSuccess, onError);
     const { mutate: DeleteData } = useDeleteData();
 
-    console.log("--->  homePage2", data);
+    console.log("--->  vivek", vivek);
 
     if (isLoading || isFetching) {
         return <div>Lodiding.....</div>
@@ -35,6 +35,7 @@ const Developers = () => {
         return <div> {error.message} </div>
     }
 
+
     return (
         <React.Fragment>
             <div>
@@ -42,7 +43,7 @@ const Developers = () => {
                 <div>
                     <Carousel itemsToShow={3.5}>
                         {
-                            _.map(data?.data, (data, index) => {
+                            _.map(vivek?.data, (data, index) => {
                                 return <div className='parent-carousel' key={data.id}>
                                     <div className='image-section'>
                                         <img src={mainProfile} alt='user-profile' className='profile-user' />

@@ -65,7 +65,9 @@ export const useAddDeveloperData = () => {
 export const useDeleteData = () => {
     const queryClient = useQueryClient();
     return useMutation(DeleteDeveloperData, {
-        onSuccess: () => {
+        onSuccess: (res, id) => {
+            console.log("res", id);
+            console.log("id", id);
             toast.success('delete user successfully')
             queryClient.refetchQueries('developers');
         }

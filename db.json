@@ -1,29 +1,14 @@
 {
   "limbani-softwares": [
     {
-      "id": 1,
-      "name": "keyur mulani",
-      "position": "FE-developer"
-    },
-    {
       "name": "alpesh ",
       "position": "kanzaria",
       "id": 2
     },
     {
-      "name": "test",
-      "position": "test",
-      "id": 3
-    },
-    {
       "name": "aakash ",
       "position": "patel",
       "id": 4
-    },
-    {
-      "name": "userName",
-      "position": "test",
-      "id": 5
     },
     {
       "name": "keyur",
