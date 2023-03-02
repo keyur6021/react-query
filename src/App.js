@@ -19,6 +19,7 @@ import { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import NewHook from './components/NewHook';
+import Test from './components/Test';
 
 function App() {
 
@@ -115,6 +116,7 @@ function App() {
         <NavbarComponent />
         <Routes>
           <Route exact path='/' element={<HomePage />} />
+          <Route exact path='/test' element={<Test />} />
           <Route exact path='/super-heroes' element={<SampleDeveloper />} />
           <Route exact path='/developers' element={<Developers />} />
           <Route exact path='/developers/:developerId' element={<SingleDeveloper />} />

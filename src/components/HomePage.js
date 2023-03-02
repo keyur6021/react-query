@@ -5,11 +5,6 @@ import * as _ from 'lodash';
 
 
 const HomePage = () => {
-
-
-
-
-
     //! for data get from another component -----
 
     // const queryClient = useQueryClient();
@@ -22,9 +17,8 @@ const HomePage = () => {
 
     return (
         <div>
-
             <div style={{ fontSize: '58px', zIndex: '1' }}>
-                this is test data
+                Wel-Come To Our Site
             </div>
             {/* {_.map(data?.data, (data) => {
                 return data.alterEgo
@@ -33,4 +27,15 @@ const HomePage = () => {
     )
 }
 
-export default HomePage
+export function square(number) {
+    return number * number
+}
+
+export function newdata(test) {
+    console.log("test", test(36))
+}
+newdata(square);
+
+
+
+export default HomePage;
