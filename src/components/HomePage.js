@@ -5,6 +5,10 @@ import * as _ from 'lodash';
 
 
 const HomePage = () => {
+    const handleUpload = (e) => {
+        console.log("new", e.target.files[0]);
+    }
+
     //! for data get from another component -----
 
     // const queryClient = useQueryClient();
@@ -20,6 +24,9 @@ const HomePage = () => {
             <div style={{ fontSize: '58px', zIndex: '1' }}>
                 Wel-Come To Our Site
             </div>
+            <div>
+                <input type="file" name='sample-file' onChange={(e) => handleUpload(e)} />
+            </div>
             {/* {_.map(data?.data, (data) => {
                 return data.alterEgo
             })} */}
@@ -27,15 +34,5 @@ const HomePage = () => {
     )
 }
 
-export function square(number) {
-    return number * number
-}
-
-export function newdata(test) {
-    console.log("test", test(36))
-}
-newdata(square);
-
-
-
 export default HomePage;
+

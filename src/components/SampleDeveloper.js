@@ -14,7 +14,7 @@ const SampleDeveloper = () => {
             setIsLodding(false);
         }).catch((error) => {
             settError(error.message)
-            setIsLodding(false)
+            setIsLodding(false);
         })
     }, [])
 

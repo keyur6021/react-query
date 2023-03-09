@@ -1,7 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './components/HomePage';
 import NavbarComponent from './components/Navbar';
 import Developers from './components/Developers';
 import SingleDeveloper from './components/SingleDeveloper';
@@ -20,6 +19,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import NewHook from './components/NewHook';
 import Test from './components/Test';
+import HomePage from './components/HomePage';
 
 function App() {
 
