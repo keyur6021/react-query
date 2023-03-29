@@ -5,6 +5,7 @@ import * as _ from 'lodash';
 
 
 const HomePage = () => {
+    //! for file upload get image path :
     const handleUpload = (e) => {
         console.log("new", e.target.files[0]);
     }
@@ -27,9 +28,6 @@ const HomePage = () => {
             <div>
                 <input type="file" name='sample-file' onChange={(e) => handleUpload(e)} />
             </div>
-            {/* {_.map(data?.data, (data) => {
-                return data.alterEgo
-            })} */}
         </div>
     )
 }

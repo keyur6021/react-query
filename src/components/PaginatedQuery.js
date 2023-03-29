@@ -12,7 +12,6 @@ const PaginatedQuery = () => {
     const [pageNumber, setPageNumber] = useState(1);
 
     const { data: colors, isLoading, isError, error } = useQuery(["colors", pageNumber], () => fetchColors(pageNumber));
-    console.log("--->  colors", colors)
 
     if (isLoading) {
         return <div> Loddding.... </div>

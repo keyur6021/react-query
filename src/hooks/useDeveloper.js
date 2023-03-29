@@ -17,10 +17,9 @@ const DeleteDeveloperData = (deleteId) => {
     return axios.delete(`http://localhost:5000/limbani-softwares/${deleteId}`)
 }
 
-export const useDeveloperHook = (onSuccess, onError) => {
+export const useDeveloperHook = (onSuccess, onError, id) => {
 
     // !useQuery for ony get the Data 
-
     return useQuery('developers',
         featchSuperHero,
         {
