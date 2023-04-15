@@ -11,11 +11,6 @@
       "id": 4
     },
     {
-      "name": "keyur",
-      "position": "patel",
-      "id": 6
-    },
-    {
       "name": "er",
       "position": "edr",
       "id": 7
@@ -29,6 +24,16 @@
       "name": "new developer",
       "position": "FE",
       "id": 10
+    },
+    {
+      "name": "admin@clapboard.studio",
+      "position": "FE",
+      "id": 11
+    },
+    {
+      "name": "sadda",
+      "position": "dasda",
+      "id": 12
     }
   ],
   "friends": [

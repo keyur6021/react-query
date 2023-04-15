@@ -4,7 +4,8 @@ import * as _ from 'lodash';
 
 
 
-const HomePage = () => {
+const HomePage = (data, newData) => {
+    console.log("data", newData, data)
     //! for file upload get image path :
     const handleUpload = (e) => {
         console.log("new", e.target.files[0]);

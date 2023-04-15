@@ -115,7 +115,7 @@ function App() {
       <Router>
         <NavbarComponent />
         <Routes>
-          <Route exact path='/' element={<HomePage />} />
+          <Route exact path='/' element={<HomePage data={"new data"} newData={"123"} />} />
           <Route exact path='/test' element={<Test />} />
           <Route exact path='/super-heroes' element={<SampleDeveloper />} />
           <Route exact path='/developers' element={<Developers />} />

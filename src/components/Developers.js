@@ -26,7 +26,6 @@ const Developers = () => {
     const { isLoading, data: developerData, isError, error, isFetching, refetch } = useDeveloperHook(onSuccess, onError);
     const { mutate: DeleteData } = useDeleteData();
 
-
     if (isLoading || isFetching) {
         return <div>Lodiding.....</div>
     }
